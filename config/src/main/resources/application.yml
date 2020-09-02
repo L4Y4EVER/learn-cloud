@@ -5,10 +5,10 @@ spring:
     config:
       server:
         git:
-          uri: https://git.imooc.com/springcloudtest/config-repo.git
+          uri: https://github.com/L4Y4EVER/config-repository.git
           username: L4Y4EVER
           password: lhy521987
-          basedir: C:/Java/coder/config/basedir
+          basedir: E:/coder/coderSelf/code/config/basedir
 
 eureka:
   client:
@@ -17,4 +17,8 @@ eureka:
 management:
   endpoints:
     web:
-      expose: "*"
+      exposure:
+        include: "*"
+#    jmx:
+#      exposure:
+#        include: "*"
