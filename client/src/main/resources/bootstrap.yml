@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: client
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG
+      profile: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/
+
+# 应用服务 WEB 访问端口
+server:
+  port: 8081
+  # Actuator Web 访问端口
+#  management.server.port=8081
+
+# spring cloud access&secret config
+# 可以访问如下地址查看: https://usercenter.console.aliyun.com/#/manage/ak
+#alibaba.cloud.access-key=****
+#alibaba.cloud.secret-key=****
+
+#mybatis.mapper-locations=classpath:mapper/*Mapper.xml
+#mybatis:
+#  type-aliases-package: com.lhy.client.dao
+#  mapper-locations: classpath:mapper/*Mapper.xml
+
+
