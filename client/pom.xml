@@ -116,7 +116,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.3.0.RELEASE</version>
+                <version>2.1.16.RELEASE</version>
                 <configuration>
                     <mainClass>com.lhy.client.ClientApplication</mainClass>
                 </configuration>
